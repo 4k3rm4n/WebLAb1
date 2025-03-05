@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 15px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #ff4081;
+}
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow-y: auto; /* Додано для прокрутки */
+    max-height: calc(100vh - 150px); /* Задається висота для прокрутки */
+}
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.content-box svg {
+    width: 50px;
+    height: 50px;
+    fill: #6a11cb;
+}
+h2 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+footer {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #ff4081;
+}
+footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #888;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.social-link svg {
+    fill: #6a11cb; /* Колір як у хедері */
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+    transform: scale(1.2);
+    fill: #2575fc; /* другий колір градієнту */
+}
