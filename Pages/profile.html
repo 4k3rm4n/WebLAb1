@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamUpHub - Профіль користувача</title>
     <link rel="stylesheet" href="/WebLAb1/Styles/styleProfile.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -30,10 +31,12 @@
             <div class="status"></div>
         </div>
         <div class="profile-info">
-            <h2>@ProGamer42</h2>
-            <h3>Ім'я: Іван Петров</h3>
-            <p><strong>Про себе:</strong> Розробник з 5-річним досвідом у створенні веб-додатків. Люблю працювати в команді, грати в шутери та брати участь у хакатонах.</p>
-            <p><strong>Статус:</strong> <span style="color: #0f0;">Онлайн</span></p>
+            <h2 id="username">@Username</h2>
+            <h3 id="realname">Ім'я: Ім'я Користувача</h3>
+            <p><strong>Email:</strong> <span id="email">example@email.com</span></p>
+            <p><strong>Стать:</strong> <span id="gender">Стать</span></p>
+            <p><strong>Дата народження:</strong> <span id="dob">00-00-0000</span></p>
+            <button id="logout-button">Вийти</button>
         </div>
     </div>
 </main>
@@ -53,6 +56,7 @@
     </div>
     <p>&copy; 2025 TeamUpHub. Всі права захищено.</p>
 </footer>
-
+<script type="module" src="/WebLAb1/js/main-profile.js"></script>
+<script src="/WebLAb1/js/nav.js"></script>
 </body>
 </html>
